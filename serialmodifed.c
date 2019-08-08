@@ -136,7 +136,7 @@ int Transcive(int sinkfd,int modfd)
 void main()
 {
 	//uart initialization
-	char *portname = "/dev/ttyUSB0";
+    char *portname = "/dev/ttyUSB0";
     char *portname1 = "/dev/ttyUSB1";
 	int sinkfd,modfd;
 	int wlen;
@@ -180,10 +180,6 @@ void main()
 	sleep(2);
 	write(modfd,SUB,strlen(SUB));
 	sleep(2);
-	//write(modfd,AT_CMQTTTOPIC,strlen(AT_CMQTTTOPIC));
-	//sleep(3);
-        //write(modfd,TOPIC,strlen(TOPIC));
-	//sleep(2);
 	printf("read the sink data");
 	sleep(1);
 	while(1)
