@@ -129,6 +129,10 @@ int Transcive(int sinkfd,int modfd)
                         write(modfd,AT_CMQTTPUB,strlen(AT_CMQTTPUB));
                         sleep(2);
 		}
+               else
+              {
+                printf("fail to apply poll select method");
+             }
 	}
 }
 
